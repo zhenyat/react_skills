@@ -2,5 +2,6 @@
 <%= image_tag("logos/reactjs_512x512.png",  :alt => "ReactJS", size: "128x128") %>
 
 <%= javascript_pack_tag 'hello_react' %>
-<h1>Demo#index: Simple tests of ReactJS</h1>
-<%= react_component("HelloWorld", {greeting: "Hello from react-rails component!"}) %>
+<h1>Demo#index: Standard tests of ReactJS</h1>
+<!--%= react_component("HelloWorld", {greeting: "Hello from react-rails component"}) %-->
+<%= react_component("HelloWorld", {greeting: "Hello from react-rails component", info: {name: "react-rails"}}, {class: "hello-world"}) %>
