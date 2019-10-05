@@ -6,7 +6,7 @@ class RenderClassComponent extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h3>Hello (rendered in the definite node)</h3>
+        <h3>Hello (rendered in the selected node)</h3>
       </React.Fragment>
     );
   }

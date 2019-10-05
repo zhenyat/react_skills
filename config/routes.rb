@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'react_bootstrap/index'
   root 'home#index'
   get 'fcc/index'
   get 'fcc/components'

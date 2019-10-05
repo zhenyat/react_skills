@@ -1,2 +1,34 @@
-<h1>Fcc#life_cycle</h1>
-<p>Find me in app/views/fcc/life_cycle.html.erb</p>
+<h1 class="title">React Life Cycle</h1>
+<p>see as well: https://metanit.com/web/react/2.6.php</p>
+<ul><h4>A list of some main lifecycle methods</h4>
+  <li>componentWillMount()</li>
+  <li>componentDidMount()</li>
+  <li>componentWillReceiveProps()</li>
+  <li>shouldComponentUpdate()</li>
+  <li>componentWillUpdate()</li>
+  <li>componentDidUpdate()</li>
+  <li>componentWillUnmount()</li>
+</ul>
+<p>
+  Component lifecycles can be broken down into 4 stages:<br>
+  <strong>Initlization -> Mounting -> Updating -> Unmounting</strong>
+</p>
+<p>
+  The progression in which these functions are called is as follows:<br>
+  <strong>componentWillReceiveProps -> componentWillUpdate -> componentDidUpdate</strong>
+</p>
+
+<h2 class="lesson">32. Use the Lifecycle Method componentWillMount (see JS Console)</h2>
+<%= react_component("fcc/life_cycle/MyComponent") %>
+
+<h2 class="lesson">33. Use the Lifecycle Method componentDidMount</h2>
+<%= react_component("fcc/life_cycle/NewComponent") %>
+
+<h2 class="lesson">34. Add Event Listeners (not working here ...)</h2>
+<%#= react_component("fcc/life_cycle/MoreComponent") %>
+
+<h2 class="lesson">35. Manage Updates with Lifecycle Methods (see JS Console as well)</h2>
+<%= react_component("fcc/life_cycle/Controller") %>
+
+<h2 class="lesson">36. Optimize Re-Renders with shouldComponentUpdate</h2>
+<%= react_component("fcc/life_cycle/NewController") %>
