@@ -5,8 +5,7 @@
  * 
  * 24.09.2019   Zhenya
  ***************************************************************/
-import React                            from "react"
-import PropTypes                        from "prop-types"
+import React from "react"
 import {Accordion, Alert, Card, Button} from "react-bootstrap"
 
 import Alerts     from './Alerts'

@@ -54,13 +54,14 @@
 #   23.07.2019  Ruby 2.6.3 / Rails 6.0.0.rc2
 #   18.09.2019  Ruby 2.6.4 / Rails 6.0.0
 #               Gems versions are revised
+#   03.11.2019  Ruby 2.6.5 / Rails 6.0.1.rc1
 ################################################################################
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.4'
+ruby '2.6.5'
 
-gem 'rails', '~> 6.0.0'                         # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 6.0.1.rc1'                     # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
 gem 'sqlite3', '~> 1.4'                         # Use sqlite3    as the database for Active Record
 #gem 'sqlite3', groups: [:test, :development]
