@@ -1,0 +1,2 @@
+class Guy < ApplicationRecord
+end

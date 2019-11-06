@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get :search, controller: :main
+  resources :guys
   get 'react_bootstrap/index'
   root 'home#index'
   get 'fcc/index'

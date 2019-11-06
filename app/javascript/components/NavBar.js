@@ -16,7 +16,8 @@ class NavBar extends React.Component {
                 <Nav className="mr-auto">
                     <Nav.Link href="http://localhost:3000/fcc/index">freeCodeCamp</Nav.Link>
                     <Nav.Link href="http://localhost:3000/react_bootstrap/index">react-bootstrap</Nav.Link>
-                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                    <Nav.Link href="http://localhost:3000/guys">Guys</Nav.Link>
+                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
