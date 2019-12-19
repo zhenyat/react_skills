@@ -8,7 +8,7 @@ export default class Guys extends React.Component {
   }
   
   render () {
-    const items = this.props.entries.map(item => 
+    const items = this.props.guys.map(item => 
         <tr key={item.id}>
         <td>{item.name}</td>
         <td>{item.age}</td>
@@ -34,5 +34,5 @@ export default class Guys extends React.Component {
 };
 
 Guys.propTypes = {
-  entries: PropTypes.array
+  guys: PropTypes.array
 };
