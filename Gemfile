@@ -55,43 +55,38 @@
 #   18.09.2019  Ruby 2.6.4 / Rails 6.0.0
 #               Gems versions are revised
 #   03.11.2019  Ruby 2.6.5 / Rails 6.0.1.rc1
+#   11.04.2024  Ruby 2.7.8 / Rails 6.1.7.7
 ################################################################################
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.0'
+ruby '2.7.8'
 
-gem 'rails', '~> 6.0.2.1'                     # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.7'
+gem 'sqlite3', '~> 1.4'
+gem 'puma', '~> 5.0'
+gem 'sass-rails', '>= 6'
+gem 'webpacker', '~> 5.0'
+gem 'turbolinks', '~> 5'
+gem 'jbuilder', '~> 2.7'
 
-gem 'sqlite3', '~> 1.4'                         # Use sqlite3    as the database for Active Record
-#gem 'sqlite3', groups: [:test, :development]
-#gem 'mysql2'                                   # Use mysql      as the database for Active Record
-#gem 'pg'                                       # Use postgresql as the database for Active Record
-#gem 'pg_search'                                # https://mkdev.me/posts/kak-delat-full-text-poisk-v-rails-pri-pomoschi-postgresql
-gem 'seed_dump'                                 # https://github.com/rroblak/seed_dump
+gem 'react-rails'
 
-gem 'puma'#, '~> 3.11'  - using ~> 4            # Use Puma as the app server (NOT 4
 
-gem 'sass-rails'                                # Rails now works with sass-rails 6.0. 
+# gem 'puma'#, '~> 3.11'  - using ~> 4            # Use Puma as the app server (NOT 4
+# gem 'sass-rails'                                # Rails now works with sass-rails 6.0. 
                                                 # sass-rails 6 wraps sassc-rails gem under the hood. 
                                                 # This new version stops usage of outdated and unsupported ruby-sass gem.
 
 gem 'uglifier'                                  # Use Uglifier as compressor for JavaScript assets
-
-gem 'webpacker'                                 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'react-rails'                               # https://rubygems.org/gems/react-rails/versions/1.7.1
-
+# gem 'webpacker'                                 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'foreman'
-
-#gem 'therubyracer', platforms: :ruby           # Call JavaScript code and manipulate JavaScript objects from Ruby.
-                                                # Call Ruby code and manipulate Ruby objects from JavaScript.
-                                                # https://github.com/rails/execjs
-gem 'mini_racer', platforms: :ruby              # See https://github.com/rails/execjs#readme for more supported runtimes
+# gem 'mini_racer', platforms: :ruby              # See https://github.com/rails/execjs#readme for more supported runtimes
 
 #gem 'coffee-rails', '~> 4.2'      stop         # Use CoffeeScript for .coffee assets and views
 #gem 'jquery-rails'                stop         # Use jquery as the JavaScript library
-gem 'turbolinks'                                # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'jbuilder'                                  # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+# gem 'turbolinks'                                # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+# gem 'jbuilder'                                  # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
 
 #gem 'sdoc', group: :doc                        # bundle exec rake doc:rails generates the API under doc/api.
@@ -99,28 +94,28 @@ gem 'bcrypt'                                    # Use ActiveModel has_secure_pas
 
 #gem 'haml-rails'                                # https://github.com/indirect/haml-rails
 
-gem 'zt_btce', :github => 'zhenyat/zt_btce', :branch => 'master'
+# gem 'zt_btce', :github => 'zhenyat/zt_btce', :branch => 'master'
 
 # crono for jobs
-gem 'crono'
-gem 'daemons'
-gem 'sinatra', require: nil                     # to run web-console for crono
+# gem 'crono'
+# gem 'daemons'
+# gem 'sinatra', require: nil                     # to run web-console for crono
 
 #gem 'whenever', :require => false
 #gem "simple_scheduler"
 
 # Charts
-gem 'gon'
-gem 'fusioncharts-rails'
+# gem 'gon'
+# gem 'fusioncharts-rails'
 #gem 'chartkick'                                # NOT USED (just for reference)
 #
 #gem 'rest-client'                              # https://github.com/rest-client/rest-client
 #gem 'devise'                                   # https://github.com/plataformatec/devise
 
-gem 'pundit'                                    # https://github.com/elabs/pundit
+# gem 'pundit'                                    # https://github.com/elabs/pundit
 #gem 'ckeditor'                                  # https://github.com/galetahub/ckeditor
 #gem 'carrierwave'                               # https://github.com/carrierwaveuploader/carrierwave
-gem 'mini_magick'                               # Use ActiveStorage variant https://github.com/minimagick/minimagick
+# gem 'mini_magick'                               # Use ActiveStorage variant https://github.com/minimagick/minimagick
 
 #gem "acts_as_list"                             # https://github.com/swanandp/acts_as_list
 #gem 'acts-as-taggable-on'                      # https://github.com/mbleigh/acts-as-taggable-on
@@ -130,7 +125,7 @@ gem 'mini_magick'                               # Use ActiveStorage variant http
 gem 'bootsnap', '>= 1.4.2', require: false      # Reduces boot times through caching; required in config/boot.rb
 
 # MH 3-rd Edition
-gem 'faker'
+# gem 'faker'
 #gem 'fog'
 
 #gem 'bootstrap-sass'                            # Bootstrap 3
@@ -139,11 +134,11 @@ gem 'faker'
 
 gem 'bootstrap'                                 # https://github.com/twbs/bootstrap-rubygem
 
-gem 'lightbox2-rails'                           # https://github.com/gavinkflam/lightbox2-rails
-gem 'simple_form'                               # https://github.com/plataformatec/simple_form
-gem 'enum_help'
+# gem 'lightbox2-rails'                           # https://github.com/gavinkflam/lightbox2-rails
+# gem 'simple_form'                               # https://github.com/plataformatec/simple_form
+# gem 'enum_help'
 
-gem 'ransack'
+# gem 'ransack'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw] # Byebug is a Ruby 2 debugger. Call 'byebug' anywhere in the code to stop execution and get a debugger console
