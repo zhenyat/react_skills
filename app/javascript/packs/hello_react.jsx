@@ -1,26 +1,12 @@
-// Run this example by adding <%= javascript_pack_tag 'hello_react' %> to the head of your layout file,
-// like app/views/layouts/application.html.erb. All it does is render <div>Hello React</div> at the bottom
-// of the page.
+// New version, updated for React 18 
+//              with createRoot instead of ReactDOM
 
-import React from 'react'
-import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
+// Add element to the existing HTML content
+document.body.innerHTML += '<div id="hi"></div>';
 
-Hello.defaultProps = {
-  name: 'David'
-}
-
-Hello.propTypes = {
-  name: PropTypes.string
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <Hello name="React" />,
-    document.body.appendChild(document.createElement('div')),
-  )
-})
+// Render your React component instead
+const root = createRoot(document.getElementById('hi'));
+root.render(<h2>Hi, React 18!</h2>);
