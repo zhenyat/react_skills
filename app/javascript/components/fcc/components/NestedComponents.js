@@ -1,16 +1,17 @@
 import React     from "react"
-import PropTypes from "prop-types"
 
 const TypeOfFruit = () => {
     return(
       <React.Fragment>
-        <h2>Fruits:</h2>
-        <ul>
-          <li>Apples</li>
-          <li>Blueberries</li>
-          <li>Strawberries</li>
-          <li>Bananas</li>
-        </ul>
+        <div className='type-of-fruit output'>
+          <h6>Fruits:</h6>
+          <ul>
+            <li>Apples</li>
+            <li>Blueberries</li>
+            <li>Strawberries</li>
+            <li>Bananas</li>
+          </ul>
+        </div>
       </React.Fragment>
     );
 };
@@ -18,7 +19,9 @@ const TypeOfFruit = () => {
 const Fruits = () => {
     return(
       <React.Fragment>
-        <TypeOfFruit />
+        <div className='fruits output'>
+          <TypeOfFruit />
+        </div>
       </React.Fragment>    
     );
 };
@@ -27,8 +30,10 @@ class NestedComponents extends React.Component {
   render() {
     return (
       <React.Fragment>
-      <h2>Types of Food:</h2>
-        <Fruits/>
+        <div className='foods output'>
+          <h5>Types of Food:</h5>
+            <Fruits/>
+        </div>
       </React.Fragment>
     );
   }

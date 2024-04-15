@@ -1,11 +1,12 @@
 import React     from "react"
-import PropTypes from "prop-types"
 
 class ChildComponent extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <p>I'm Child Component</p>
+        <div className='child-component'>
+          <p className='output'>Hello from Child Component</p>
+        </div>
       </React.Fragment>
     );
   }  
@@ -15,8 +16,10 @@ class ComponentCompound extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h3>I'm Parent Component</h3>
-        <ChildComponent />
+        <div className='child-component'>
+          <h5 className='output'>I'm Parent Component</h5>
+          <ChildComponent />
+        </div>
       </React.Fragment>
     );
   }

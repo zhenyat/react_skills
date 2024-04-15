@@ -1,12 +1,15 @@
 import React     from "react"
-import PropTypes from "prop-types"
 
 const StatelessFunctional = function() {
     return (
         <React.Fragment>
-            <p>Stateless Functional Component: output</p>
+            <div className='stateless-function'>
+                <p className='output'>Stateless Functional Component: output</p>
+            </div>
         </React.Fragment>
     );
 };
 
+// to export functions, objects, or primitive values from the module so they 
+// can be used by other programs with the import statement.
 export default StatelessFunctional
