@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-body  {padding: 20px;}
-h1.title {color: maroon; padding-left: 10px;}
-h2.lesson {color: navy; padding-left: 20px;}
-.output {padding-left: 40px}
+
+h1.title {color: maroon;}
+h2.lesson {color: navy;}

@@ -1,9 +1,8 @@
-import React     from "react"
-import PropTypes from "prop-types"
+import React from "react"
 
 const List = (props) => {
     return <p>{props.tasks}</p>;
-//  return <p>{props.tasks.join(', ')}</p>; // error: TypeError: props.tasks.join is not a functiond
+//  return <p>{props.tasks.join(', ')}</p>; // error: TypeError: props.tasks.join is not a function
                                             // Workout: usr `join` in ToDo component
 };
 
