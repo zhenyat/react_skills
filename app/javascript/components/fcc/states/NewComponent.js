@@ -1,5 +1,4 @@
-import React     from "react"
-import PropTypes from "prop-types"
+import React from "react"
 
 export default class NewComponent extends React.Component {
   constructor(props) {
@@ -18,7 +17,7 @@ export default class NewComponent extends React.Component {
     return (
       <React.Fragment>
         <button onClick={this.addItem}>Add Item</button>
-        <h4>Current Item Count: {this.state.itemCount}</h4>
+        <h5>Current Item Count: {this.state.itemCount}</h5>
       </React.Fragment>
     );
   }

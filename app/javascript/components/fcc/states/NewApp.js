@@ -1,5 +1,4 @@
-import React     from "react"
-import PropTypes from "prop-types"
+import React from "react"
 
 export default  class NewApp extends React.Component {
   constructor(props) {
@@ -30,9 +29,11 @@ class GetInput extends React.Component {
     return (
       <React.Fragment>
         <h3>Get Input:</h3>
-        <input
+        <input 
+          name='input_field'
           value={this.props.input}
-          onChange={this.props.handleChange}/>
+          onChange={this.props.handleChange}
+        />
       </React.Fragment>
     );
   }

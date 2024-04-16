@@ -1,5 +1,4 @@
-import React     from "react"
-import PropTypes from "prop-types"
+import React from "react"
 
 export default class NextComponent extends React.Component {
   constructor(props) {
@@ -19,14 +18,14 @@ export default class NextComponent extends React.Component {
     if (this.state.visibility) {
       return(
         <React.Fragment>
-          <button onClick={this.toggleVisibility}>Click Me</button>
-          <h2>Now you see me!</h2>
+          <button onClick={this.toggleVisibility}>Hide</button>
+          <h4>Now you see me!</h4>
         </React.Fragment>
       );
     } else {
       return (
         <React.Fragment>
-          <button onClick={this.toggleVisibility}>Click Me</button>
+          <button onClick={this.toggleVisibility}>Show</button>
         </React.Fragment>
       );
     }

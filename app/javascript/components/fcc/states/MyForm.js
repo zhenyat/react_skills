@@ -1,5 +1,4 @@
-import React     from "react"
-import PropTypes from "prop-types"
+import React from "react"
 
 export default  class MyForm extends React.Component {
   constructor(props) {
@@ -27,10 +26,10 @@ export default  class MyForm extends React.Component {
     return (
       <React.Fragment>
         <form onSubmit={this.handleSubmit}>
-          <input value = {this.state.input} onChange={this.handleChange} />
+          <input  name="input" value = {this.state.input} onChange={this.handleChange} />
           <button type='submit'>Submit!</button>
         </form>
-        <h3>{this.state.submit}</h3>
+        <h4>{this.state.submit}</h4>
       </React.Fragment>
     );
   }
