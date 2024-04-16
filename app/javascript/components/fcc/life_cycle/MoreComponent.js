@@ -1,6 +1,4 @@
-import React     from "react"
-import PropTypes from "prop-types"
-import ReactDOM  from "react-dom"
+import React from "react"
 
 export default class MoreComponent extends React.Component {
   constructor(props) {

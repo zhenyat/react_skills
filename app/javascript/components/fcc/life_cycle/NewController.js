@@ -1,11 +1,10 @@
 import React     from "react"
-import PropTypes from "prop-types"
 
 class OnlyEvens extends React.Component {
   constructor(props) {
     super(props);
   }
-  shouldComponentUpdate(nextProps, nextState) {
+  UNSAFE_shouldComponentUpdate(nextProps, nextState) {
     console.log('Should I update?');
      // change code below this line
       if (nextProps.value % 2 === 0) {
