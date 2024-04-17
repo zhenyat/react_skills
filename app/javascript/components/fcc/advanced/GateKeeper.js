@@ -1,4 +1,4 @@
-import React     from "react"
+import React from "react"
 
 export default class GateKeeper extends React.Component {
   constructor(props) {
@@ -24,6 +24,7 @@ export default class GateKeeper extends React.Component {
       <React.Fragment>
         <h3>Don't Type Too Much:</h3>
         <input
+          name='input_field'
           type="text"
           style={inputStyle}
           value ={this.state.input}

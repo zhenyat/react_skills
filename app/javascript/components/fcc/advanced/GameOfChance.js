@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 
 class Result extends React.Component {
     constructor(props) {

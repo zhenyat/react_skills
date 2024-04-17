@@ -1,5 +1,4 @@
-import React     from "react"
-import PropTypes from "prop-types"
+import React from "react"
 
 const textAreaStyles = {
   width: 235,
@@ -35,6 +34,7 @@ export default class MyToDoList extends React.Component {
     return (
       <React.Fragment>
         <textarea
+          name='text_filed'
           onChange={this.handleChange}
           value={this.state.userInput}
           style={textAreaStyles}

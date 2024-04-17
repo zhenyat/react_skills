@@ -1,5 +1,4 @@
-import React     from "react"
-import PropTypes from "prop-types"
+import React from "react"
 
 const inputStyle = {
   width: 235,
@@ -60,6 +59,7 @@ export default class MagicEightBall extends React.Component {
     return (
       <React.Fragment>
         <input
+          name='input_field'
           type="text"
           value={this.state.userInput}
           onChange={this.handleChange}

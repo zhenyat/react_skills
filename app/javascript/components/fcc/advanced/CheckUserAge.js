@@ -1,5 +1,4 @@
-import React     from "react"
-import PropTypes from "prop-types"
+import React from "react"
 
 const inpStyle = {
   width: 235,
@@ -36,6 +35,7 @@ export default class CheckUserAge extends React.Component {
       <React.Fragment>
         <h3>Enter Your Age to Continue</h3>
         <input
+          name='input_field'
           style={inpStyle}
           type ="number"
           value={this.state.input}
