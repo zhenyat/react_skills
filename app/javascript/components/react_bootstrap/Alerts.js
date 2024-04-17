@@ -1,6 +1,5 @@
-import React     from "react"
-import PropTypes from "prop-types"
-import Alert     from 'react-bootstrap/Alert' //or: import {Alert} from "react-bootstrap"
+import React from "react"
+import Alert from 'react-bootstrap/Alert' //or: import {Alert} from "react-bootstrap"
 
 const variants = ['primary', 'secondary', 'success', 'danger',
                   'warning', 'info',      'light',   'dark'];

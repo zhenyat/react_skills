@@ -1,9 +1,9 @@
-<div class='demo'>
-  <%= image_tag("logos/rails_bw_403x512.png", :alt => "Rails",   size: "101x128") %>
-  <%= image_tag("logos/reactjs_512x512.png",  :alt => "ReactJS", size: "128x128") %>
+  <div class='demo'>
+    <%= image_tag("logos/rails_bw_403x512.png", :alt => "Rails",   size: "101x128") %>
+    <%= image_tag("logos/reactjs_512x512.png",  :alt => "ReactJS", size: "128x128") %>
 
-  <h1>Demo: Standard tests of ReactJS</h1>
-  <%= javascript_pack_tag 'hello_react' %>
-  <!--%= react_component("HelloWorld", {greeting: "Hello from react-rails component"}) %-->
-  <%= react_component("HelloWorld", {greeting: "Hello from react-rails component", info: {name: "react-rails"}}, {class: "hello-world"}) %>
-/div>
+    <h1>Demo: Standard tests of ReactJS</h1>
+    <%= javascript_pack_tag 'hello_react' %>
+    <!--%= react_component("HelloWorld", {greeting: "Hello from react-rails component"}) %-->
+    <%= react_component("HelloWorld", {greeting: "Hello from react-rails component", info: {name: "react-rails"}}, {class: "hello-world"}) %>
+  </div>

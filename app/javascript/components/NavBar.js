@@ -1,9 +1,9 @@
 import React     from "react"
 import PropTypes from "prop-types"
 import {Button, Form, FormControl, Nav, Navbar, NavDropdown} from "react-bootstrap"
-//import LogoImage from 'images/logos/fcc.png'
+import LogoImage from 'images/logos/fcc.png'
 
-//const LogoComponent = props => <img src={LogoImage} />
+const LogoComponent = props => <img src={LogoImage} />
 
 class NavBar extends React.Component {
   render () {
