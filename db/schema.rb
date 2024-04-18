@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2019_12_15_134337) do
 
   create_table "guys", force: :cascade do |t|
     t.string "name"
-    t.integer "age"
+    t.datetime "date_of_birth"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

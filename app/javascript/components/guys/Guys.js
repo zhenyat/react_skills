@@ -21,7 +21,7 @@ export default class Guys extends React.Component {
             <thead>
                 <tr>
                   <th>Name</th>
-                  <th>Age</th>
+                  <th>Age (Years)</th>
                 </tr>
             </thead>
             <tbody>

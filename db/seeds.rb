@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Guy.create name: 'Zhenya', age: 69
-Guy.create name: 'Rada',   age: 12
-Guy.create name: 'Julia',  age: 41
-Guy.create name: 'Dasha',  age: 39
+Guy.create name: 'Zhenya', date_of_birth: '1950-02-25'
+Guy.create name: 'Rada',   date_of_birth: '2007-08-25'
+Guy.create name: 'Julia',  date_of_birth: '1977-12-08'
+Guy.create name: 'Dasha',  date_of_birth: '1980-07-23'

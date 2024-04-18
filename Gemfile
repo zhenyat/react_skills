@@ -71,7 +71,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 
 gem 'react-rails'
-
+gem 'date_diff'
 
 # gem 'puma'#, '~> 3.11'  - using ~> 4            # Use Puma as the app server (NOT 4
 # gem 'sass-rails'                                # Rails now works with sass-rails 6.0. 
