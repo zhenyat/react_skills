@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'hooks/index'
   # get :search, controller: :main
   resources :guys
   get 'react_bootstrap/index'
